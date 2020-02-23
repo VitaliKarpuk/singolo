@@ -9,14 +9,6 @@
     font-style: normal;
 
 }
-@font-face {
-    font-family: 'lato-bold';
-    src: url('./assets/Lato/Lato-Bold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
 html{
     font-family: 'Lato';
     font-size: 10px;
@@ -48,9 +40,11 @@ body{
 .logo{
     display: flex;
 }
+.logo span{
+    color: #f06c64;
+}
 h1{
     font-size: 2.3rem;
-    /* font-family: 'lato-bold'; */
     font-weight: 500;
     color: #ffffff;
     letter-spacing: 0.1rem;
@@ -102,13 +96,13 @@ a{
 }
 .slider__IPhon-horizontal{
     position: relative;
-    top: 5px;
-    left: 54px;
+    top: 4px;
+    left: 53px;
 }
 .slider__IPhon-vertical{
     position: relative;
-    top: 92px;
-    left: -280px;
+    top: 90px;
+    left: -281px;
 }
 .slider__pointer-left{
     position: relative;
@@ -147,7 +141,7 @@ h2{
     font-weight: 300;
     color: #767e9e;
     line-height: 30px;
-    margin-bottom: 45px;
+    margin-bottom: 42px;
 }
 .layout-3-column{
     width: 100%;
