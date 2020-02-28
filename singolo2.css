@@ -1,0 +1,106 @@
+@font-face {
+    font-family: "Loto";
+    src: url(../assets/Lato/Lato-Regular.ttf);
+  }
+  html {
+    margin: 0;
+    font-size: 10px;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Loto", Verdana, sans-serif;
+  }
+  
+  h2, h1, h3, p {
+    margin: 0;
+  }
+  
+  .portfolio {
+    max-width: 1020px;
+    background: #2d303a;
+    margin: 0 auto;
+    padding: 69px 0 0;
+  }
+  .portfolio h2 {
+    font-size: 3rem;
+    line-height: 18px;
+    color: #666d89;
+    font-weight: 900;
+    margin-bottom: 26px;
+    letter-spacing: 1px;
+  }
+  .portfolio p {
+    font-size: 1.8rem;
+    line-height: 30px;
+    color: #767e9e;
+    font-weight: 300;
+    margin-bottom: 11px;
+  }
+  .portfolio .bottom-line {
+    width: 100%;
+    height: 6px;
+    background-color: #323746;
+    margin-top: 45px;
+  }
+  
+  .portfolio__tag {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #767e9e;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 19px;
+  }
+  
+  .tag {
+    padding: 3px 6px;
+    color: #767e9e;
+    border: 1px solid #666d89;
+    border-radius: 5px;
+    margin-right: 11px;
+  }
+  .tag:hover {
+    border-color: #c5c5c5;
+    cursor: pointer;
+  }
+  
+  .tag_selected {
+    border-color: #c5c5c5;
+  }
+  .tag_selected:hover {
+    border-color: #767e9e;
+    cursor: pointer;
+  }
+  
+  .layout-4-column {
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    flex-wrap: wrap;
+    height: 622px;
+    overflow: hidden;
+  }
+  
+  article {
+    margin-bottom: 21px;
+  }
+  
+  .portfolio-img {
+    width: 220px;
+    height: 187px;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  .portfolio-img img {
+    width: 100%;
+  }
+  
+  .wrapper {
+    max-width: 942px;
+    margin: 0 auto;
+  }
+  
+  
