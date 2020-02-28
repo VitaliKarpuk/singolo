@@ -103,4 +103,84 @@
     margin: 0 auto;
   }
   
+  .about-us {
+    max-width: 1020px;
+    margin: 0 auto;
+    background: #f2f2f2;
+    padding: 69px 0 0;
+  }
+  .about-us .bottom-line {
+    width: 100%;
+    height: 6px;
+    background-color: #ffffff;
+    margin-top: 65px;
+  }
+  
+  .about-us__title {
+    font-size: 3.1rem;
+    line-height: 18px;
+    color: #666d89;
+    font-weight: 900;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+  }
+  
+  .about-us__description {
+    font-size: 1.8rem;
+    line-height: 30px;
+    color: #767e9e;
+    font-weight: 300;
+    margin-bottom: 46px;
+  }
+  
+  .layout-3-column {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .employee {
+    width: 302px;
+  }
+  .employee img {
+    margin-bottom: 14px;
+  }
+  .employee h3 {
+    font-size: 1.8rem;
+    line-height: 18px;
+    color: #666d89;
+    font-weight: 900;
+    margin-bottom: 11px;
+  }
+  .employee p {
+    font-size: 1.2rem;
+    line-height: 22px;
+    color: #767e9e;
+    font-weight: 400;
+    margin-bottom: 21px;
+  }
+  
+  .employee__conect {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .employee__conect div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 6px;
+  }
+  .employee__conect div img {
+    margin: 0;
+  }
+  .employee__conect div img:hover {
+    filter: opacity(0.5);
+    cursor: pointer;
+  }
+  
+
   
