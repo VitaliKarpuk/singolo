@@ -15,6 +15,9 @@
   h2, h1, h3, p {
     margin: 0;
   }
+  a{
+    text-decoration: none;
+  }
   
   .portfolio {
     max-width: 1020px;
@@ -54,6 +57,7 @@
     font-weight: 400;
     margin-bottom: 19px;
   }
+
   
   .tag {
     padding: 3px 6px;
@@ -69,6 +73,7 @@
   
   .tag_selected {
     border-color: #c5c5c5;
+    color: #c5c5c5;
   }
   .tag_selected:hover {
     border-color: #767e9e;
@@ -91,8 +96,6 @@
   .portfolio-img {
     width: 220px;
     height: 187px;
-    overflow: hidden;
-    object-fit: cover;
   }
   .portfolio-img img {
     width: 100%;
@@ -102,7 +105,6 @@
     max-width: 942px;
     margin: 0 auto;
   }
-  
   .about-us {
     max-width: 1020px;
     margin: 0 auto;
