@@ -92,7 +92,7 @@ body{
   .form__discribe {
     height: 185px;
     width: 605px;
-    margin-bottom: 61px;
+    margin-bottom: 10px;
     background-color: #d6564f;
     border: none;
     border-radius: 5px;
@@ -104,7 +104,19 @@ body{
     color: #f48c8f;
     resize: none;
   }
-
+.button{
+  background-color: #88383b;
+  width: 200px;
+  text-align: center;
+  padding: 10px 0;
+  color: #f0d8d9;
+  font-size: 1.2rem;
+  letter-spacing: 0;
+}
+.button:hover{
+  cursor: pointer;
+  background-color: #9c4b47;
+}
   
   .contact-info {
     margin-left: 20px;
