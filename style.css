@@ -145,6 +145,7 @@ h2{
     margin-bottom: 42px;
     letter-spacing: -0.09px;
     word-spacing: 0.1px;
+    text-align: justify;
 }
 .layout-3-column{
     width: 100%;
@@ -152,10 +153,12 @@ h2{
     flex-wrap: wrap;
 }
 .tool{
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 28px;
-    margin-right: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+  margin-right: 30px;
+  overflow: hidden;
+  height: 96px;
 }
 
 .tool:nth-child(3){
@@ -192,6 +195,7 @@ h2{
     color: #767e9e;
     margin: 0;
     letter-spacing: 0.07px;
+    text-align: justify;
 }
 /* Siigolo 2 */
   a{
@@ -202,15 +206,19 @@ h2{
     max-width: 1020px;
     background: #2d303a;
     margin: 0 auto;
-    padding: 69px 0 0;
+    padding: 58px 0 0;
   }
   .portfolio h2 {
     font-size: 3rem;
     line-height: 18px;
     color: #666d89;
     font-weight: 900;
-    margin-bottom: 26px !important;
+    margin-bottom: -1px !important;
     letter-spacing: 1px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 10px 0;
   }
   .portfolio p {
     font-size: 1.8rem;
@@ -218,6 +226,7 @@ h2{
     color: #767e9e;
     font-weight: 300;
     margin-bottom: 11px;
+    text-align: justify;
   }
   .portfolio .bottom-line {
     width: 100%;
@@ -334,6 +343,9 @@ h2{
     font-weight: 900;
     margin-bottom: 20px;
     margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
   .employee__name{
       margin-bottom: 12px !important;
@@ -385,6 +397,7 @@ h2{
     color: #f0d8d9;
     font-weight: 300;
     margin-bottom: 44px;
+    text-align: justify;
   }
   
   .bottom-line {
@@ -485,6 +498,7 @@ h2{
     color: #f0d8d9;
     font-weight: 400;
     margin: 0;
+    text-align: justify;
   }
   .contact-info .contact-info__data {
     margin-bottom: 0px;
@@ -546,3 +560,4 @@ h2{
     filter: opacity(0.5);
     cursor: pointer;
   }
+
