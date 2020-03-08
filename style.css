@@ -101,7 +101,7 @@ a{
 .slider__IPhon-vertical{
     position: relative;
     top: 90px;
-    left: -281px;
+    left: -280px;
 }
 .slider__pointer-left{
     position: relative;
@@ -209,7 +209,7 @@ h2{
     line-height: 18px;
     color: #666d89;
     font-weight: 900;
-    margin-bottom: 26px;
+    margin-bottom: 26px !important;
     letter-spacing: 1px;
   }
   .portfolio p {
@@ -370,9 +370,6 @@ h2{
   /* Singolo3 */
   .wrapper {
     margin: 0 40px 0 40px;
-  }
-  h2, p{
-    margin: 0;
   }
   
   .get-quote {
