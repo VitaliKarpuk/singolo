@@ -11,6 +11,25 @@ const portfolioImg = document.querySelectorAll(".portfolio-img");
 const buttonPortfolio = document.querySelector(".portfolio__tag")
 let layout4 = document.querySelector(".layout-4-column")
 const img = document.querySelectorAll('.portfolio-img img')
+const navButtonHeader = document.querySelector('.navigation')
+const linkHeader = document.querySelectorAll('.navigation a')
+console.log(navButtonHeader);
+
+// Header
+navButtonHeader.onclick = (e) => {
+    let clickTag = e.target
+    removeSelectedNav();
+    selectedClickNav(clickTag)    
+}
+const removeSelectedNav = () => {
+    linkHeader.forEach(item => {
+        item.classList.remove("navigation_selected")
+    })
+}
+
+const selectedClickNav = (clickTag) => {
+    clickTag.classList.add("navigation_selected")
+}
 // Slider
 function nextSlide() {
     goToSlide(currentSlide+1);
