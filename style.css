@@ -431,7 +431,9 @@ a{
   height: 622px;
   overflow: hidden;
 }
-
+.layout-4-column{
+  outline: none !important;
+}
 article {
   margin-bottom: 21px;
 }
