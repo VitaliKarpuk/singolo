@@ -151,7 +151,7 @@ slider__pointer-left{
   background-size: 100% 100%;
 }
 .iPhone-Vertical__screen{
-  background-color: #2d303a;
+  background-color: #000000;;
   position: absolute;
   width: 192px;
   height: 338px;
@@ -258,7 +258,7 @@ slider__pointer-left{
   font-size: 2rem;
 }
 .iPhone-Horizontall__screen{
-  background-color: #2d303a;
+  background-color: #000000;;
   position: absolute;
   height: 192px;
   width: 338px;
@@ -445,7 +445,8 @@ article {
   width: 100%;
 }
 .portfolio-img_border{
-  border: 5px solid #F06C64;
+  outline: 5px solid #F06C64;
+  outline-offset: -5px;
 }
 
 .wrapper {
