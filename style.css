@@ -101,7 +101,7 @@ a{
   margin: 0px;
   list-style-type: none;
 }
-slider__pointer-left{
+.slider__pointer-left{
   position: relative;
   top: 25px;
 }
