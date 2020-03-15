@@ -93,28 +93,183 @@ a{
   padding: 0 40px 58px 42px;
   margin: 0;
 }
-.slider__IPhon-horizontal{
+.slides {
   position: relative;
-  top: 4px;
-  left: 53px;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
 }
-.slider__IPhon-vertical{
-  position: relative;
-  top: 90px;
-  left: -280px;
-}
-.slider__pointer-left{
+slider__pointer-left{
   position: relative;
   top: 25px;
 }
 .slider__pointer-right {
   position: relative;
   top: 25px;
-  right: 257px;
+}
+.slider_pointer{
+  z-index: 4;
 }
 .slider_pointer:hover{
   cursor: pointer;
   opacity: 0.3;
+}
+.slide {
+  display: flex;
+  position: absolute;
+  left: 0px;
+  top: 0px; 
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.showing {
+  opacity: 1;
+  z-index: 2;
+}
+
+.slide img{
+  position: absolute;
+}
+.iPhone-Vertical{
+  position: relative;
+  width: 242px;
+  height: 484px;
+  top: 52px;
+  left: 52px;
+  background-image: url(./assets/Base.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.iPhone-Vertical__screen{
+  background-color: #2d303a;
+  position: absolute;
+  width: 192px;
+  height: 338px;
+  z-index: 6;
+  top: 62px;
+  left: 15px;
+  background-image: url(./assets/Layer\ 6.png);
+  background-position: -13px -131px;
+
+}
+.iPhone-Vertical__button{
+  position: absolute;
+  top: 406px;
+  left: 87px;
+  cursor: pointer;
+  transition: opacity 0.5s;
+}
+.iPhone-Vertical__button:hover{
+  opacity: 0.5;
+}
+.iPhone-Vertical__camera{
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  top: 18px;
+  left: 105px;
+  z-index: 3;
+  border-radius: 4px;
+  background-color: #d8d8d8;
+  color:  #eb5055;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iPhone-Vertical__camera p{
+  margin: 0;
+  position: absolute;
+  top: -9px;
+  font-size: 2rem;
+}
+.iPhone-Vertical__speaker{
+  position: absolute;
+  width: 36px;
+  height: 5px;
+  border-radius: 3px;
+  background-color: #acacac;
+  z-index: 5;
+  top: 38px;
+  left: 92px;
+}
+.screen-Vertical_off{
+  background-image: none;
+  z-index: 10;
+}
+.iPhone-Horizontal{
+  position: relative;
+  height: 242px;
+  width: 484px;
+  top: 172px;
+  right: -125px;
+  background-image: url(./assets/Base\ \(1\).png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.iPhone-Horizontal__button {
+  top: 86px;
+  left: 7px;
+  cursor: pointer;
+  transition: opacity 0.5s;
+}
+.iPhone-Horizontal__button:hover{
+  opacity: 0.5;
+}
+.iPhone-Horizontal__speaker{
+  position: absolute;
+  width: 36px;
+  height: 5px;
+  border-radius: 3px;
+  background-color: #acacac;
+  z-index: 5;
+  top: 107px;
+  right: 46px;
+  transform: rotate(90deg);
+}
+.iPhone-Horizontal__camera{
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  top: 104px;
+  right: 42px;
+  z-index: 3;
+  border-radius: 4px;
+  background-color: #d8d8d8;
+  color: #eb5055;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.iPhone-Horizontal__camera p{
+  margin: 0;
+  position: absolute;
+  top: -9px;
+  font-size: 2rem;
+}
+.iPhone-Horizontall__screen{
+  background-color: #2d303a;
+  position: absolute;
+  height: 192px;
+  width: 338px;
+  z-index: 6;
+  top: 13px;
+  left: 57px;
+  background-image: url(./assets/Layer\ 5.png);
+  background-position: -122px -116px;
+}
+.screen-Horizontall_off{
+  background-image: none;
 }
 .services{
   width: 1020px;
@@ -284,9 +439,13 @@ article {
 .portfolio-img {
   width: 220px;
   height: 187px;
+  cursor: pointer;
 }
 .portfolio-img img {
   width: 100%;
+}
+.portfolio-img_border{
+  border: 5px solid #F06C64;
 }
 
 .wrapper {
@@ -559,4 +718,21 @@ background-color: #9c4b47;
 .social img:hover {
   filter: opacity(0.5);
   cursor: pointer;
+}
+.modal__window{
+  position: fixed;
+  top: 0;
+  left: 30%;
+  width: 400px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+  font-size: 2rem;
+}
+.modal_button{
+  position: relative;
+  top: 70px;
+  left: 330px;
+  width: 50px;
+  height: 30px;
 }
