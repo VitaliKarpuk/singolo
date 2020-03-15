@@ -111,7 +111,9 @@ a{
 .slider__pointer-right {
     position: relative;
     top: 25px;
-    right: 257px;
+}
+.slider_pointer{
+    z-index: 4;
 }
 .slider_pointer:hover{
     cursor: pointer;
@@ -184,4 +186,169 @@ h2{
     font-weight: 400;
     color: #767e9e;
     margin: 0;
+}
+
+.slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+}
+ 
+.slide {
+    display: flex;
+    position: absolute;
+    left: 0px;
+    top: 0px; 
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+ 
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+ 
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+
+.slide img{
+    position: absolute;
+}
+.iPhone-Vertical{
+    position: relative;
+    width: 242px;
+    height: 484px;
+    top: 52px;
+    left: 52px;
+    background-image: url(./assets/Base.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.iPhone-Vertical__screen{
+    background-color: #2d303a;
+    position: absolute;
+    width: 192px;
+    height: 338px;
+    z-index: 6;
+    top: 62px;
+    left: 15px;
+    background-image: url(./assets/Layer\ 6.png);
+    background-position: -13px -131px;
+
+}
+.iPhone-Vertical__button{
+    position: absolute;
+    top: 406px;
+    left: 87px;
+    cursor: pointer;
+    transition: opacity 0.5s;
+}
+.iPhone-Vertical__button:hover{
+    opacity: 0.5;
+}
+.iPhone-Vertical__camera{
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    top: 18px;
+    left: 105px;
+    z-index: 3;
+    border-radius: 4px;
+    background-color: #d8d8d8;
+    color:  #eb5055;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iPhone-Vertical__camera p{
+    margin: 0;
+    position: absolute;
+    top: -9px;
+    font-size: 2rem;
+}
+.iPhone-Vertical__speaker{
+    position: absolute;
+    width: 36px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #acacac;
+    z-index: 5;
+    top: 38px;
+    left: 92px;
+}
+.screen-Vertical_off{
+    background-image: none;
+    z-index: 10;
+}
+.iPhone-Horizontal{
+    position: relative;
+    height: 242px;
+    width: 484px;
+    top: 172px;
+    right: -125px;
+    background-image: url(./assets/Base\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.iPhone-Horizontal__button {
+    top: 86px;
+    left: 7px;
+    cursor: pointer;
+    transition: opacity 0.5s;
+}
+.iPhone-Horizontal__button:hover{
+    opacity: 0.5;
+}
+.iPhone-Horizontal__speaker{
+    position: absolute;
+    width: 36px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: #acacac;
+    z-index: 5;
+    top: 107px;
+    right: 46px;
+    transform: rotate(90deg);
+}
+.iPhone-Horizontal__camera{
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    top: 104px;
+    right: 42px;
+    z-index: 3;
+    border-radius: 4px;
+    background-color: #d8d8d8;
+    color: #eb5055;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iPhone-Horizontal__camera p{
+    margin: 0;
+    position: absolute;
+    top: -9px;
+    font-size: 2rem;
+}
+.iPhone-Horizontall__screen{
+    background-color: #2d303a;
+    position: absolute;
+    height: 192px;
+    width: 338px;
+    z-index: 6;
+    top: 13px;
+    left: 57px;
+    background-image: url(./assets/Layer\ 5.png);
+    background-position: -122px -116px;
+}
+.screen-Horizontall_off{
+    background-image: none;
 }
