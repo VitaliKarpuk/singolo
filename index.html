@@ -24,10 +24,29 @@
     </header>
     <section class="slider">
         <div class="wrapper">
-            <div class="slider__pointer-left slider_pointer"><img src="./assets/pointer-left.png" alt="pointer"></div>
-            <div class="slider__IPhon-horizontal"><img src="./assets/iPhone-Vertical.png" altiPhone Verticaldiv></div>
-            <div class="slider__IPhon-vertical"><img src="./assets/iPhone-Horizontal.png" alt="iPhone Horizontal"></div>
-            <div class="slider__pointer-right slider_pointer"><img src="./assets/pointer-right.png" alt="pointer"></div>
+            <div class="slider__pointer-right slider_pointer" id="previous"><img src="./assets/pointer-left.png" alt="pointer"></div>
+            <ul class="slides">
+                <li class="slide showing">
+                    <div class="iPhone-Vertical">
+                        <div class="iPhone-Vertical__camera"><p>&#183;</p> </div>
+                        <div class="iPhone-Vertical__speaker"></div>
+                        <img class="iPhone-Vertical__button" src="./assets/Square (1).png" alt="Square">
+                        <div class="iPhone-Vertical__screen"></div>
+                    </div>
+                    
+                    <div class="iPhone-Horizontal">
+                        <div class="iPhone-Horizontal__camera"><p>&#183;</p> </div>
+                        <div class="iPhone-Horizontal__speaker"></div>
+                        <img class="iPhone-Horizontal__button" src="./assets/Square (1).png" alt="Square">
+                        <div class="iPhone-Horizontall__screen"></div>
+                    </div>
+                </li>
+                <li class="slide">
+                    <img src="./assets/img-slide2.jpeg" alt="slide" width="100%">
+                </li>
+            </ul>
+
+            <div class="slider__pointer-left slider_pointer" id="next"><img src="./assets/pointer-right.png" alt="pointer"></div>
         </div>
     </section>
     <section class="services">
@@ -99,24 +118,24 @@
             <h2>Portfolio</h2>
             <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
             <div class="portfolio__tag">
-                <a class="tag tag_selected" href="#">All</a>
-                <a class="tag tag_bordered" href="#">Web Design</a>
-                <a class="tag tag_bordered" href="#">Graphic Design</a>
-                <a class="tag tag_bordered" href="#">Artwork</a>
+                <span class="tag tag_selected" href="#">All</span>
+                <span class="tag tag_bordered" href="#">Web Design</span>
+                <span class="tag tag_bordered" href="#">Graphic Design</span>
+                <span class="tag tag_bordered" href="#">Artwork</span>
             </div>
             <div class="layout-4-column">
-                <article class="portfolio-img img1"><img src="./assets/img1.png" width="220px" height="187px" alt="img1"></article>
-                <article class="portfolio-img img2"><img src="./assets/img2.png" width="220px" height="187px" alt="img2"></article>
-                <article class="portfolio-img img3"><img src="./assets/img17.png" width="220px" height="187px" alt="img3"></article>
-                <article class="portfolio-img img4"><img src="./assets/img4.png" width="220px" height="187px" alt="img4"></article>
-                <article class="portfolio-img img5"><img src="./assets/img5.png" width="220px" height="187px" alt="img5"></article>
-                <article class="portfolio-img img6"><img src="./assets/img6.png" width="220px" height="187px" alt="img6"></article>
-                <article class="portfolio-img img7"><img src="./assets/img7.png" width="220px" height="187px" alt="img7"></article>
-                <article class="portfolio-img img8"><img src="./assets/img8.png" width="220px" height="187px" alt="img8"></article>
-                <article class="portfolio-img img9"><img src="./assets/img9.png" width="220px" height="187px" alt="img9"></article>
-                <article class="portfolio-img img10"><img src="./assets/img10.png" width="220px" height="187px" alt="img10"></article>
-                <article class="portfolio-img img11"><img src="./assets/img16.png" width="220px" height="187px" alt="img11"></article>
-                <article class="portfolio-img img12"><img src="./assets/img12.png" width="220px" height="187px" alt="img12"></article>
+                <article class="portfolio-img"><img src="./assets/img1.png" width="220px" height="187px" alt="img1"></article>
+                <article class="portfolio-img"><img src="./assets/img2.png" width="220px" height="187px" alt="img2"></article>
+                <article class="portfolio-img"><img src="./assets/img3.png" width="220px" height="187px" alt="img3"></article>
+                <article class="portfolio-img"><img src="./assets/img4.png" width="220px" height="187px" alt="img4"></article>
+                <article class="portfolio-img"><img src="./assets/img5.png" width="220px" height="187px" alt="img5"></article>
+                <article class="portfolio-img"><img src="./assets/img6.png" width="220px" height="187px" alt="img6"></article>
+                <article class="portfolio-img"><img src="./assets/img7.png" width="220px" height="187px" alt="img7"></article>
+                <article class="portfolio-img"><img src="./assets/img8.png" width="220px" height="187px" alt="img8"></article>
+                <article class="portfolio-img"><img src="./assets/img9.png" width="220px" height="187px" alt="img9"></article>
+                <article class="portfolio-img"><img src="./assets/img10.png" width="220px" height="187px" alt="img10"></article>
+                <article class="portfolio-img"><img src="./assets/img11.png" width="220px" height="187px" alt="img11"></article>
+                <article class="portfolio-img"><img src="./assets/img12.png" width="220px" height="187px" alt="img12"></article>
             </div>
         </div>
         <div class="bottom-line"></div>
@@ -213,5 +232,6 @@
             </div>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
