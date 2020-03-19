@@ -728,13 +728,14 @@ background-color: #9c4b47;
 }
 .modal__window{
   position: fixed;
-  top: 0;
+  top: 150px;
   left: 30%;
   width: 400px;
   height: 200px;
   background-color: rgba(255, 255, 255, 1);
   box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
   font-size: 2rem;
+  padding: 10px;
 }
 .modal_button{
   position: relative;
