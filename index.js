@@ -135,7 +135,7 @@ const selectedClickImg = (clickTag) => {
     clickTag.classList.add("portfolio-img_border")
 }
 const buttonSubmit = document.querySelector("form")
-console.log(buttonSubmit);
+
 buttonSubmit.onsubmit = (e) => {
     e.preventDefault()
     let subject;
@@ -167,6 +167,10 @@ buttonSubmit.onsubmit = (e) => {
     div.append(button)
     button.onclick = () => {
         div.remove()
+        e.target.children[0].value = ''
+        e.target.children[1].value = '';
+        e.target.children[2].value = '';
+        e.target.children[3].value = '';
     }   
     
 }
