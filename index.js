@@ -190,8 +190,7 @@ function onScroll (e)  {
 
 const slider = document.querySelector('.slide__container');
 const buttons = document.querySelectorAll('.slider_pointer');
-const slides = document.querySelectorAll('.slide')
-console.log(slides);
+const slides = document.querySelectorAll('.slide');
 
 let index = 1;
 let size = slides[index].clientWidth;
@@ -219,7 +218,6 @@ slider.addEventListener('transitionend', () => {
     index = slides.length - 2;
     slider.style.transform = 'translateX(' + ( -size * index) + 'px)';
   }else if(slides[index].id === 'first'){
-    console.log('dkmbfsjdk,fnvs d');
     slider.style.transition = 'none';
     index = 1;
     slider.style.transform = 'translateX(' + ( -size * index) + 'px)';
