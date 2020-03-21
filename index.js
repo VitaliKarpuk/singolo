@@ -1,10 +1,6 @@
-let slides = document.querySelectorAll('.slide');
-let currentSlide = 0;
-let next = document.getElementById('next');
-let previous = document.getElementById('previous');
-const phoneButtonVertical = document.querySelector(".iPhone-Vertical__button");
+const phoneButtonVertical = document.querySelectorAll(".iPhone-Vertical__button");
 const phoneButtonHorizontall = document.querySelector('.iPhone-Horizontal__button')
-const screenVertical = document.querySelector(".iPhone-Vertical__screen");
+const screenVertical = document.querySelectorAll(".iPhone-Vertical__screen");
 const screenHorizontall = document.querySelector(".iPhone-Horizontall__screen")
 const tags = document.querySelectorAll(".portfolio__tag .tag")
 const portfolioImg = document.querySelectorAll(".portfolio-img");
@@ -13,7 +9,7 @@ let layout4 = document.querySelector(".layout-4-column")
 const img = document.querySelectorAll('.portfolio-img img')
 const navButtonHeader = document.querySelector('.navigation')
 const linkHeader = document.querySelectorAll('.navigation a')
-console.log(navButtonHeader);
+
 
 // Header
 navButtonHeader.onclick = (e) => {
@@ -31,33 +27,34 @@ const selectedClickNav = (clickTag) => {
     clickTag.classList.add("navigation_selected")
 }
 // Slider
-function nextSlide() {
-    goToSlide(currentSlide+1);
-}
+// function nextSlide() {
+//     goToSlide(currentSlide+1);
+// }
  
-function previousSlide() {
-    goToSlide(currentSlide-1);
-}
+// function previousSlide() {
+//     goToSlide(currentSlide-1);
+// }
 
-function goToSlide(n) {
-    slides[currentSlide].className = 'slide';
-    currentSlide = (n+slides.length)%slides.length;
-    slides[currentSlide].className = 'slide showing';
-}
+// function goToSlide(n) {
+//     slides[currentSlide].className = 'slide';
+//     currentSlide = (n+slides.length)%slides.length;
+//     slides[currentSlide].className = 'slide showing';
+// }
 
  
-next.onclick = () => {
-    nextSlide();
-};
-previous.onclick = () => {
-    previousSlide();
-};
+// next.onclick = () => {
+//     nextSlide();
+// };
+// previous.onclick = () => {
+//     previousSlide();
+// };
 
-phoneButtonVertical.onclick = () => {
-    if(screenVertical.className === 'iPhone-Vertical__screen'){
-        screenVertical.className = "iPhone-Vertical__screen screen-Vertical_off"
+
+phoneButtonVertical[3].onclick = () => {
+    if(screenVertical[3].className === 'iPhone-Vertical__screen'){
+        screenVertical[3].className = "iPhone-Vertical__screen screen-Vertical_off"
     }else{
-        screenVertical.className = 'iPhone-Vertical__screen'
+        screenVertical[3].className = 'iPhone-Vertical__screen'
     }
 }
 phoneButtonHorizontall.onclick = () => {
@@ -161,7 +158,6 @@ buttonSubmit.onsubmit = (e) => {
     div.innerHTML = `Письмо отправлено\<br>
     ${subject}\<br>
     ${describe}\<br>`
-    console.log(div);;
     div.classList.add('modal__window')
     document.body.append(div)
     div.append(button)
@@ -172,5 +168,61 @@ buttonSubmit.onsubmit = (e) => {
         e.target.children[2].value = '';
         e.target.children[3].value = '';
     }   
+}
+
+document.addEventListener('scroll', onScroll)
+function onScroll (e)  {
+    const currentPosition = window.scrollY;
+    const sections = document.querySelectorAll('section');
+    const linkHeader = document.querySelectorAll('.navigation a')
+    sections.forEach( el => {
+    if(el.offsetTop <= currentPosition && (el.offsetTop + el.offsetHeight - 1) > currentPosition)
+        linkHeader.forEach(a => {
+            a.classList.remove('navigation_selected');           
+            if(el.getAttribute('id') === a.getAttribute('href').substring(1)){
+                a.classList.add('navigation_selected')
+            }
+        })
+    })
     
 }
+
+
+const slider = document.querySelector('.slide__container');
+const buttons = document.querySelectorAll('.slider_pointer');
+const slides = document.querySelectorAll('.slide')
+console.log(slides);
+
+let index = 1;
+let size = slides[index].clientWidth;
+
+update()
+function update () {
+  slider.style.transform = 'translateX(' + ( -size * index) + 'px)';
+}
+
+function slide () {
+  slider.style.transition = 'transform .5s ease-in-out'
+  update()
+}
+function btnCheck () {
+  if(this.id === 'previous'){
+    index--
+  }else if (this.id === 'next'){
+    index++
+  }
+  slide()
+}
+slider.addEventListener('transitionend', () => {
+  if(slides[index].id === 'last'){ 
+    slider.style.transition = 'none';
+    index = slides.length - 2;
+    slider.style.transform = 'translateX(' + ( -size * index) + 'px)';
+  }else if(slides[index].id === 'first'){
+    console.log('dkmbfsjdk,fnvs d');
+    slider.style.transition = 'none';
+    index = 1;
+    slider.style.transform = 'translateX(' + ( -size * index) + 'px)';
+  }
+})
+buttons.forEach( btn => btn.addEventListener('click', btnCheck)) 
