@@ -50,20 +50,20 @@ const selectedClickNav = (clickTag) => {
 // };
 
 
-phoneButtonVertical[3].onclick = () => {
-    if(screenVertical[3].className === 'iPhone-Vertical__screen'){
-        screenVertical[3].className = "iPhone-Vertical__screen screen-Vertical_off"
-    }else{
-        screenVertical[3].className = 'iPhone-Vertical__screen'
-    }
-}
-phoneButtonHorizontall.onclick = () => {
-    if(screenHorizontall.className === 'iPhone-Horizontall__screen'){
-        screenHorizontall.className = "iPhone-Horizontall__screen screen-Horizontall_off"
-    }else{
-        screenHorizontall.className = 'iPhone-Horizontall__screen'
-    }
-}
+// phoneButtonVertical[3].onclick = () => {
+//     if(screenVertical[3].className === 'iPhone-Vertical__screen'){
+//         screenVertical[3].className = "iPhone-Vertical__screen screen-Vertical_off"
+//     }else{
+//         screenVertical[3].className = 'iPhone-Vertical__screen'
+//     }
+// }
+// phoneButtonHorizontall.onclick = () => {
+//     if(screenHorizontall.className === 'iPhone-Horizontall__screen'){
+//         screenHorizontall.className = "iPhone-Horizontall__screen screen-Horizontall_off"
+//     }else{
+//         screenHorizontall.className = 'iPhone-Horizontall__screen'
+//     }
+// }
 
 // Portfolio
 
@@ -188,39 +188,57 @@ function onScroll (e)  {
 }
 
 
-const slider = document.querySelector('.slide__container');
-const buttons = document.querySelectorAll('.slider_pointer');
+// slider
+const slider = document.querySelector('.slides')
 const slides = document.querySelectorAll('.slide');
+const buttons = document.querySelectorAll('.slider_pointer');
 
-let index = 1;
-let size = slides[index].clientWidth;
 
-update()
+let index = 1
+
 function update () {
-  slider.style.transform = 'translateX(' + ( -size * index) + 'px)';
+    slider.style.transform = 'translateX(' + ( -100 * index) + '%)';
+    
 }
-
 function slide () {
-  slider.style.transition = 'transform .5s ease-in-out'
-  update()
+    slider.style.transition = 'transform .5s ease-in-out'
+    update()
 }
 function btnCheck () {
-  if(this.id === 'previous'){
-    index--
-  }else if (this.id === 'next'){
-    index++
-  }
-  slide()
+    if(this.id === 'next'){
+        index--
+    }else if(this.id === 'previous'){
+        index++
+    }
+    slide();
 }
 slider.addEventListener('transitionend', () => {
-  if(slides[index].id === 'last'){ 
-    slider.style.transition = 'none';
-    index = slides.length - 2;
-    slider.style.transform = 'translateX(' + ( -size * index) + 'px)';
-  }else if(slides[index].id === 'first'){
-    slider.style.transition = 'none';
-    index = 1;
-    slider.style.transform = 'translateX(' + ( -size * index) + 'px)';
-  }
+    if(slides[index].id === 'last'){
+        slider.style.transition = 'none';
+        index = 1;
+        update()
+        
+    }else if(slides[index].id === 'first'){
+        slider.style.transition = 'none';
+        index = slides.length - 2;
+        update()
+    }
+    
 })
 buttons.forEach( btn => btn.addEventListener('click', btnCheck)) 
+console.log(screenVertical);
+
+phoneButtonVertical[0].onclick = () => {
+    if(screenVertical[1].className === 'iPhone-Vertical__screen'){
+        screenVertical[1].className = "iPhone-Vertical__screen screen-Vertical_off"
+    }else{
+        screenVertical[1].className = 'iPhone-Vertical__screen'
+    }
+}
+phoneButtonHorizontall.onclick = () => {
+    if(screenHorizontall.className === 'iPhone-Horizontall__screen'){
+        screenHorizontall.className = "iPhone-Horizontall__screen screen-Horizontall_off"
+    }else{
+        screenHorizontall.className = 'iPhone-Horizontall__screen'
+    }
+}

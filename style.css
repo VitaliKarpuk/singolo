@@ -19,7 +19,7 @@ body{
   scroll-behavior: smooth;
 }
 .header{
-  width: 1020px;
+  max-width: 1020px;
   margin: 0 auto;
   height: 95px;
   background-color: #323746;
@@ -29,7 +29,6 @@ body{
 }
 .header .wrapper{
   height: 89px;
-  width: 940px;
   background-color: #2d303a;
   display: flex;
   align-items: center;
@@ -83,213 +82,31 @@ a{
   color: #f06c64;
 }
 .slider{
-  width: 1020px;
+  max-width: 1020px;
   height: 600px;
   margin: 0 auto;
   background-color: #ea676b;
   position: relative;
-  overflow: hidden;
 }
 .slider .wrapper{
-  width: 938px;
-  height: 540px;
+  width: 100%;
+  height: 100%;
   background-color: #f06c64;
   display: flex;
   align-items: center;
   padding: 0 40px 58px 42px;
   margin: 0;
 }
-/* .slides {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  padding: 0px;
-  margin: 0px;
-  list-style-type: none;
-} */
-.slider__pointer-left{
-  right: 40px;
-}
-.slider__pointer-right {
-  left: 42px;
-}
-.slider_pointer{
-  z-index: 4;
-  position: absolute;
-  top: 280px;
-  opacity: 0.2;
-}
-.slider_pointer:hover{
-  cursor: pointer;
-  opacity: 0.3;
-}/* 
-.slide {
-  display: flex;
-  position: absolute;
-  left: 0px;
-  top: 0px; 
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  z-index: 1;
 
-  -webkit-transition: opacity 1s;
-  -moz-transition: opacity 1s;
-  -o-transition: opacity 1s;
-  transition: opacity 1s;
-}
-
-.showing {
-  opacity: 1;
-  z-index: 2;
-}
-*/
-.slide img{
-  position: absolute;
-}
-.iPhone-Vertical{
-  position: relative;
-  width: 242px;
-  height: 484px;
-  top: 52px;
-  left: 110px;
-  background-image: url(./assets/Base.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-.iPhone-Vertical__screen{
-  background-color: #000000;;
-  position: absolute;
-  width: 192px;
-  height: 338px;
-  z-index: 6;
-  top: 62px;
-  left: 15px;
-  background-image: url(./assets/Layer\ 6.png);
-  background-position: -13px -131px;
-
-}
-.iPhone-Vertical__button{
-  position: absolute;
-  top: 406px;
-  left: 87px;
-  cursor: pointer;
-  transition: opacity 0.5s;
-}
-.iPhone-Vertical__button:hover{
-  opacity: 0.5;
-}
-.iPhone-Vertical__camera{
-  position: absolute;
-  width: 9px;
-  height: 9px;
-  top: 18px;
-  left: 105px;
-  z-index: 3;
-  border-radius: 4px;
-  background-color: #d8d8d8;
-  color:  #eb5055;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.iPhone-Vertical__camera p{
-  margin: 0;
-  position: absolute;
-  top: -9px;
-  font-size: 2rem;
-}
-.iPhone-Vertical__speaker{
-  position: absolute;
-  width: 36px;
-  height: 5px;
-  border-radius: 3px;
-  background-color: #acacac;
-  z-index: 5;
-  top: 38px;
-  left: 92px;
-}
-.screen-Vertical_off{
-  background-image: none;
-  z-index: 10;
-}
-.iPhone-Horizontal {
-  position: relative;
-  height: 242px;
-  width: 484px;
-  top: -282px;
-  right: -423px;
-  background-image: url(./assets/Base\ \(1\).png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-.iPhone-Horizontal__button {
-  top: 86px;
-  left: 7px;
-  cursor: pointer;
-  transition: opacity 0.5s;
-}
-.iPhone-Horizontal__button:hover{
-  opacity: 0.5;
-}
-.iPhone-Horizontal__speaker{
-  position: absolute;
-  width: 36px;
-  height: 5px;
-  border-radius: 3px;
-  background-color: #acacac;
-  z-index: 5;
-  top: 107px;
-  right: 46px;
-  transform: rotate(90deg);
-}
-.iPhone-Horizontal__camera{
-  position: absolute;
-  width: 9px;
-  height: 9px;
-  top: 104px;
-  right: 42px;
-  z-index: 3;
-  border-radius: 4px;
-  background-color: #d8d8d8;
-  color: #eb5055;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.iPhone-Horizontal__camera p{
-  margin: 0;
-  position: absolute;
-  top: -9px;
-  font-size: 2rem;
-}
-.iPhone-Horizontall__screen{
-  background-color: #000000;;
-  position: absolute;
-  height: 192px;
-  width: 338px;
-  z-index: 6;
-  top: 13px;
-  left: 57px;
-  background-image: url(./assets/Layer\ 5.png);
-  background-position: -122px -116px;
-}
-.screen-Horizontall_off{
-  background-image: none;
-} 
 .services{
-  width: 1020px;
-  height: 499px;
+  max-width: 1020px;
   margin: 0 auto;
   background-color: #ffffff;
 }
 .services .wrapper{
-  width: 940px;
-  height: 428px;
   margin: 0 auto;
   background-color: #f2f2f2;
-  padding: 66px 40px 0 40px;
+  padding: 66px 40px 36px 40px;
 }
 h2{
   margin: 0 0 30px 0;
@@ -438,7 +255,6 @@ a{
   justify-content: space-between;
   align-items: space-between;
   flex-wrap: wrap;
-  height: 622px;
   overflow: hidden;
 }
 .layout-4-column{
@@ -468,7 +284,7 @@ article {
   max-width: 1020px;
   margin: 0 auto;
   background: #f2f2f2;
-  padding: 69px 0 0;
+  padding: 69px 0 4px;
 }
 .about-us .bottom-line {
   width: 100%;
@@ -497,15 +313,14 @@ article {
 .about-us .layout-3-column {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
 } 
 
 .employee {
-  width: 300px;
+  width: 32%;
 }
 .employee img {
   margin-bottom: 14px;
+  width: 100%;
 }
 .employee h3 {
   font-size: 1.8rem;
@@ -593,13 +408,14 @@ article {
 }
 
 form {
-  width: 100%;
   font-size: 1.2rem;
   line-height: 22px;
   font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1.45;
 }
 form input {
-  width: 605px;
   background-color: #d6564f;
   border: none;
   border-radius: 5px;
@@ -621,7 +437,6 @@ form input::placeholder {
 
 .form__discribe {
   height: 185px;
-  width: 605px;
   margin-bottom: 10px;
   background-color: #d6564f;
   border: none;
@@ -636,7 +451,6 @@ form input::placeholder {
 }
 .button{
 background-color: #88383b;
-width: 200px;
 text-align: center;
 padding: 10px 0;
 color: #f0d8d9;
@@ -650,6 +464,8 @@ background-color: #9c4b47;
 
 .contact-info {
   margin-left: 20px;
+  flex-basis: 0;
+  flex-grow: 1;
 }
 .contact-info h3 {
   font-size: 1.8rem;
@@ -755,146 +571,162 @@ background-color: #9c4b47;
   margin: 0;
   width: 100% !important;
   padding: 0;
-}/*
-.silider{
-  
-  width: 100%;
-  height: 100%;
-}
-.slider__one{
-  width: 100%;
-  height: 100%;
 }
 
-.slider__one {
-  display: flex;
-  position: absolute;
-  left: 0px;
-  top: 0px; 
+.slider__container{
   width: 100%;
   height: 100%;
-  opacity: 0;
-  z-index: 1;
-
-  -webkit-transition: opacity 1s;
-  -moz-transition: opacity 1s;
-  -o-transition: opacity 1s;
-  transition: opacity 1s;
+  overflow: hidden;
 }
-
-.showing {
-  opacity: 1;
-  z-index: 2;
-} */
-/* 
-.slide__two{
-  width: 100%;
-  height: 100%;
-  background-color: #648BF0;
-}*/
-.slide__two .iPhone-Vertical__screen{
-  background-image: url(./assets/phone-vertical-display.png);
-}
-.iPhone-Vertical__left, .iPhone-Vertical__right{
-  opacity: 0.5;
-}
-.iPhone-Vertical__left {
-  left: 258px;
-  width: 159px;
-  height: 314px;
-  top: 143px;
-}
-.iPhone-Vertical__right{
-  left: 609px;
-  width: 159px;
-  height: 314px;
-  top: -652px !important;
-}
-.iPhone-Vertical__center{
-  left: 393px;
-  top: -263px;
-}
-.iPhone-Vertical__left .iPhone-Vertical__camera, .iPhone-Vertical__right .iPhone-Vertical__camera{
-  left: 65px;
-}
-.iPhone-Vertical__left  .iPhone-Vertical__speaker, .iPhone-Vertical__right .iPhone-Vertical__speaker{
-  width: 23px;
-  height: 3px;
-  left: 58px;
-}
-.iPhone-Vertical__left .iPhone-Vertical__screen, .iPhone-Vertical__right .iPhone-Vertical__screen {
-  background-image: url(./assets/phone-vertical-display\ \(1\).png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  width: 119px;
-  height: 199px;
-  background-position: 0 0;
-  top: 50px;
-}
-.iPhone-Vertical__left .iPhone-Vertical__button,  .iPhone-Vertical__right .iPhone-Vertical__button{
-  top: 255px;
-  left: 58px;
-} 
-
-.slide__two{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #648BF0;
-}
-
-
-.slide__container{
-  position: relative;
-  height: 100%;
-  width: 100%;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-.slide-container{
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  height: 0;
-  z-index: 0;
-}
-.slide-container > div{
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  height: 0;
-  z-index: 1;
-}
-.slide-container > div > div{
-  box-shadow: 0 0 61px 0 rgb(90, 205, 142);
-} 
-
 .slides{
   width: 100%;
-  height: 540px;
+  height: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 100%);
-}
-.slide__one{
-  position: relative;
+  grid-template-columns: repeat(4,100%);
+  transform: translateX(-100%);
 }
 .slide{
-  height: 600px;
+  width: 100%;
+  height: 100%;
+  display: flex;
 }
-.slide_1{
+.slide:nth-child(1){
   background-color: #648BF0;
 }
-.slide_2{
-  background-color: #ea676b;
+.slide:nth-of-type(2){
+  background-color: #F06C64;
+  z-index: 10;
 }
-.slide_3{
+.slide:nth-child(3){
   background-color: #648BF0;
 }
-.slide_4{
-  background-color: #ea676b;
+.slide:nth-child(4){
+  background-color: #F06C64;
 }
 
+.slider_pointer{
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.slider_pointer:hover{
+  opacity: 0.3;
+}
+.slider__pointer-right{
+  left: 4%;
+}
+.slider__pointer-left{
+  right: 4%;
+}
+.iPhone-Vertical{
+  height: 100%;
+  position: relative;
+}
 
-
+.iPhone-Vertical img{
+  width: 246px;
+  position: absolute;
+  top: 47px;
+  left: 110px;
+} 
+.iPhone-Horizontal{
+  height: 100%;
+  position: relative;
+}
+.iPhone-Horizontal img{
+  width: 486px;
+  position: absolute;
+  top: 171px;
+  left: 424px;
+}
+.iPhone-Vertical__button, .iPhone-Horizontal__button{
+  width: 45px;
+  height: 43px;
+  position: absolute;
+  background-image: url(./assets/slider/button.png);
+  cursor: pointer;
+}
+.iPhone-Vertical__screen{
+  width: 189px;
+  height: 335px;
+  background-color: black;
+  position: absolute;
+  opacity: 0;
+  top: 116px;
+  left: 126px;
+}
+.screen-Vertical_off{
+  opacity: 1;
+}
+.iPhone-Vertical__button{
+  top: 458px;
+  left: 198px;
+}
+.iPhone-Horizontall__screen{
+  width: 335px;
+  height: 189px;
+  background-color: black;
+  position: absolute;
+  opacity: 0;
+  top: 186px;
+  left: 484px;
+}
+.screen-Horizontall_off{
+  opacity: 1;
+}
+.iPhone-Horizontal__button{
+  bottom: 563px;
+  left: 431px;
+}
+.iPhone-Vertical__left img, .iPhone-Vertical__right img{
+  width: 200px;
+  opacity: 0.5;
+  position: relative;
+  top: 95px;
+}
+.iPhone-Vertical__left img{
+  left: 234px;
+}
+.iPhone-Vertical__right img{
+  left: 170px;
+}
+.Vertical-left__button, .Vertical-center__button, .Vertical-right__button{
+  position: relative;
+  background-image: url(./assets/slider/button.png);
+  background-size: 100%;
+}
+.Vertical-left__button{
+  width: 35px;
+  height: 35px;
+  top: 30px;
+  left: 317px;
+  opacity: 0.3;
+}
+.iPhone-Vertical__center{
+  position: relative;
+  top: 51px;
+  left: 200px;
+}
+.Vertical-center__button{
+  width: 45px;
+  height: 45px;
+  left: 84px;
+  bottom: 80px;
+}
+.Vertical-center__screen{
+  position: relative;
+  width: 189px;
+  height: 333px;
+  background-image: url(./assets/slider/phone-vertical-display.png);
+  background-size: 100% 100%;
+  bottom: 466px;
+  left: 16px;
+}
+.Vertical-right__button{
+  width: 35px;
+  height: 35px;
+  top: 30px;
+  left: 239px;
+  opacity: 0.3;
+}
