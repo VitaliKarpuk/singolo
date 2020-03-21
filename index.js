@@ -1,14 +1,21 @@
-const phoneButtonVertical = document.querySelectorAll(".iPhone-Vertical__button");
-const phoneButtonHorizontall = document.querySelector('.iPhone-Horizontal__button')
-const screenVertical = document.querySelectorAll(".iPhone-Vertical__screen");
-const screenHorizontall = document.querySelector(".iPhone-Horizontall__screen")
-const tags = document.querySelectorAll(".portfolio__tag .tag")
-const portfolioImg = document.querySelectorAll(".portfolio-img");
-const buttonPortfolio = document.querySelector(".portfolio__tag")
-let layout4 = document.querySelector(".layout-4-column")
-const img = document.querySelectorAll('.portfolio-img img')
-const navButtonHeader = document.querySelector('.navigation')
-const linkHeader = document.querySelectorAll('.navigation a')
+window.onload = () => {
+    const phoneButtonVertical = document.querySelectorAll(".iPhone-Vertical__button");
+    const phoneButtonHorizontall = document.querySelector('.iPhone-Horizontal__button')
+    const screenVertical = document.querySelectorAll(".iPhone-Vertical__screen");
+    const screenHorizontall = document.querySelector(".iPhone-Horizontall__screen")
+    const tags = document.querySelectorAll(".portfolio__tag .tag")
+    const portfolioImg = document.querySelectorAll(".portfolio-img");
+    const buttonPortfolio = document.querySelector(".portfolio__tag")
+    let layout4 = document.querySelector(".layout-4-column")
+    const img = document.querySelectorAll('.portfolio-img img')
+    const navigation = document.querySelector('.header__navigation')
+    const navButtonHeader = document.querySelector('.navigation')
+    const linkHeader = document.querySelectorAll('.navigation a')
+    const menu = document.querySelector('.header__menu');
+    const menuImg = document.querySelector('.header__menu img')
+    const menuSingolo = document.querySelector('.header__menu a')
+
+
 
 
 // Header
@@ -216,17 +223,14 @@ slider.addEventListener('transitionend', () => {
     if(slides[index].id === 'last'){
         slider.style.transition = 'none';
         index = 1;
-        update()
-        
+        update()     
     }else if(slides[index].id === 'first'){
         slider.style.transition = 'none';
         index = slides.length - 2;
         update()
     }
-    
 })
-buttons.forEach( btn => btn.addEventListener('click', btnCheck)) 
-console.log(screenVertical);
+buttons.forEach( btn => btn.addEventListener('click', btnCheck))
 
 phoneButtonVertical[0].onclick = () => {
     if(screenVertical[1].className === 'iPhone-Vertical__screen'){
@@ -241,4 +245,35 @@ phoneButtonHorizontall.onclick = () => {
     }else{
         screenHorizontall.className = 'iPhone-Horizontall__screen'
     }
+}
+
+
+
+
+
+
+menuImg.style.transform = `rotate(0deg)`
+menu.addEventListener('click', () => {
+    linkHeader.forEach(item => {
+
+        item.addEventListener ('click', (e) => {
+            menuImg.style.transform = `rotate(0deg)`
+            navigation.style.display = 'none'
+            menuSingolo.style.display = 'none'
+        })
+    })
+    if(menuImg.style.transform === "rotate(0deg)") {
+        menuImg.style.transform = `rotate(90deg)`
+        menuImg.className = 'menu_open'
+        navigation.style.display = 'block';
+        navigation.style.top = '0'
+        menuSingolo.style.display = 'block'
+    }else{
+        menuImg.style.transform = `rotate(0deg)`
+        menuImg.className = 'menu_close'
+        navigation.style.display = 'none'
+        menuSingolo.style.display = 'none'
+    }
+})
+
 }
