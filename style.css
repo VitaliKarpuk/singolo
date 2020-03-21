@@ -16,6 +16,7 @@ html{
 body{
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 .header{
   width: 1020px;
@@ -87,6 +88,7 @@ a{
   margin: 0 auto;
   background-color: #ea676b;
   position: relative;
+  overflow: hidden;
 }
 .slider .wrapper{
   width: 938px;
@@ -97,14 +99,14 @@ a{
   padding: 0 40px 58px 42px;
   margin: 0;
 }
-.slides {
+/* .slides {
   position: relative;
   width: 100%;
   height: 100%;
   padding: 0px;
   margin: 0px;
   list-style-type: none;
-}
+} */
 .slider__pointer-left{
   right: 40px;
 }
@@ -120,7 +122,7 @@ a{
 .slider_pointer:hover{
   cursor: pointer;
   opacity: 0.3;
-}
+}/* 
 .slide {
   display: flex;
   position: absolute;
@@ -141,7 +143,7 @@ a{
   opacity: 1;
   z-index: 2;
 }
-
+*/
 .slide img{
   position: absolute;
 }
@@ -212,12 +214,12 @@ a{
   background-image: none;
   z-index: 10;
 }
-.iPhone-Horizontal{
+.iPhone-Horizontal {
   position: relative;
   height: 242px;
   width: 484px;
-  top: 172px;
-  right: -182px;
+  top: -282px;
+  right: -423px;
   background-image: url(./assets/Base\ \(1\).png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -275,7 +277,7 @@ a{
 }
 .screen-Horizontall_off{
   background-image: none;
-}
+} 
 .services{
   width: 1020px;
   height: 499px;
@@ -357,6 +359,9 @@ height: 96px;
   letter-spacing: 0.07px;
   text-align: justify;
 }
+
+
+
 /* Siigolo 2 */
 a{
   text-decoration: none;
@@ -364,7 +369,7 @@ a{
 
 .portfolio {
   max-width: 1020px;
-  background: #2d303a;
+  background: #414657;
   margin: 0 auto;
   padding: 58px 0 0;
 }
@@ -750,7 +755,7 @@ background-color: #9c4b47;
   margin: 0;
   width: 100% !important;
   padding: 0;
-}
+}/*
 .silider{
   
   width: 100%;
@@ -780,37 +785,34 @@ background-color: #9c4b47;
 .showing {
   opacity: 1;
   z-index: 2;
-}
-
+} */
+/* 
 .slide__two{
   width: 100%;
   height: 100%;
   background-color: #648BF0;
-}
-.slide__two .iPhone-Vertical {
-  position: relative;
-}
+}*/
 .slide__two .iPhone-Vertical__screen{
   background-image: url(./assets/phone-vertical-display.png);
 }
 .iPhone-Vertical__left, .iPhone-Vertical__right{
-  position: absolute !important;
   opacity: 0.5;
 }
 .iPhone-Vertical__left {
-  left: 260px;
+  left: 258px;
   width: 159px;
   height: 314px;
-  top: 140px;
+  top: 143px;
 }
 .iPhone-Vertical__right{
   left: 609px;
   width: 159px;
   height: 314px;
-  top: 140px;
+  top: -652px !important;
 }
 .iPhone-Vertical__center{
   left: 393px;
+  top: -263px;
 }
 .iPhone-Vertical__left .iPhone-Vertical__camera, .iPhone-Vertical__right .iPhone-Vertical__camera{
   left: 65px;
@@ -832,4 +834,67 @@ background-color: #9c4b47;
 .iPhone-Vertical__left .iPhone-Vertical__button,  .iPhone-Vertical__right .iPhone-Vertical__button{
   top: 255px;
   left: 58px;
+} 
+
+.slide__two{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #648BF0;
 }
+
+
+.slide__container{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.slide-container{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  height: 0;
+  z-index: 0;
+}
+.slide-container > div{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  height: 0;
+  z-index: 1;
+}
+.slide-container > div > div{
+  box-shadow: 0 0 61px 0 rgb(90, 205, 142);
+} 
+
+.slides{
+  width: 100%;
+  height: 540px;
+  display: grid;
+  grid-template-columns: repeat(4, 100%);
+}
+.slide__one{
+  position: relative;
+}
+.slide{
+  height: 600px;
+}
+.slide_1{
+  background-color: #648BF0;
+}
+.slide_2{
+  background-color: #ea676b;
+}
+.slide_3{
+  background-color: #648BF0;
+}
+.slide_4{
+  background-color: #ea676b;
+}
+
+
+

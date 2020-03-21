@@ -8,13 +8,12 @@
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <a name="header"></a>
+    <header class="header" id="header">
         <div class="wrapper">
             <a href="#" class="logo"><h1>SINGOLO<span>*</span></h1></a>
             <nav class="header__navigation">
                 <ul class="navigation">
-                    <li ><a href="#header">HOME</a></li>
+                    <li ><a href="#slider">HOME</a></li>
                     <li><a href="#services">SERVICES</a></li>
                     <li><a href="#portfolio">PORTFOLIO</a></li>
                     <li><a href="#about-us">ABOUT</a></li>
@@ -23,10 +22,10 @@
             </nav>
         </div>
     </header>
-    <section class="slider">
+    <section class="slider" id="slider">
         <div class="wrapper">
             <div class="slider__pointer-right slider_pointer" id="previous"><img src="./assets/arrow-left.svg" alt="pointer"></div>
-            <div class="silider">
+            <!-- <div class="silider">
                 <div class="slide showing">
                     <div class="iPhone-Vertical">
                         <div class="iPhone-Vertical__camera"><p>&#183;</p> </div>
@@ -64,13 +63,101 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
+            <div class="slide__container">
+                <div class="slide-container">
+                  <div>
+                    <div>
+                      <div class="slides">
+                        <div class="slide slide_1" id="last">
+                            <div class= "slide__two ">
+                                <div class="iPhone-Vertical iPhone-Vertical__left">
+                                    <div class="iPhone-Vertical__camera"><p>&#183;</p> </div>
+                                    <div class="iPhone-Vertical__speaker"></div>
+                                    <img class="iPhone-Vertical__button" src="./assets/Square (1).png" width="30px" alt="Square">
+                                    <div class="iPhone-Vertical__screen"></div>
+                                </div>
+                                <div class="iPhone-Vertical iPhone-Vertical__center">
+                                    <div class="iPhone-Vertical__camera"><p>&#183;</p> </div>
+                                    <div class="iPhone-Vertical__speaker"></div>
+                                    <img class="iPhone-Vertical__button" src="./assets/Square (1).png" alt="Square">
+                                    <div class="iPhone-Vertical__screen"></div>
+                                </div>
+                                <div class="iPhone-Vertical iPhone-Vertical__right">
+                                    <div class="iPhone-Vertical__camera"><p>&#183;</p> </div>
+                                    <div class="iPhone-Vertical__speaker"></div>
+                                    <img class="iPhone-Vertical__button" src="./assets/Square (1).png" width="30px" alt="Square">
+                                    <div class="iPhone-Vertical__screen"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide slide_2">
+                            <div class="slide__one">
+                                <div class="iPhone-Vertical">
+                                <div class="iPhone-Vertical__camera"><p>&#183;</p> </div>
+                                <div class="iPhone-Vertical__speaker"></div>
+                                <img class="iPhone-Vertical__button" src="./assets/Square (1).png" alt="Square">
+                                <div class="iPhone-Vertical__screen"></div>
+                            </div>
+                            
+                            <div class="iPhone-Horizontal">
+                                <div class="iPhone-Horizontal__camera"><p>&#183;</p> </div>
+                                <div class="iPhone-Horizontal__speaker"></div>
+                                <img class="iPhone-Horizontal__button" src="./assets/Square (1).png" alt="Square">
+                                <div class="iPhone-Horizontall__screen"></div>
+                            </div>
+                            </div> 
+                            
+                        </div>
+                        <div class="slide slide_3">
+                            <div class= "slide__two ">
+                                <div class="iPhone-Vertical iPhone-Vertical__left">
+                                    <div class="iPhone-Vertical__camera"><p>&#183;</p> </div>
+                                    <div class="iPhone-Vertical__speaker"></div>
+                                    <img class="iPhone-Vertical__button" src="./assets/Square (1).png" width="30px" alt="Square">
+                                    <div class="iPhone-Vertical__screen"></div>
+                                </div>
+                                <div class="iPhone-Vertical iPhone-Vertical__center">
+                                    <div class="iPhone-Vertical__camera"><p>&#183;</p> </div>
+                                    <div class="iPhone-Vertical__speaker"></div>
+                                    <img class="iPhone-Vertical__button" src="./assets/Square (1).png" alt="Square">
+                                    <div class="iPhone-Vertical__screen"></div>
+                                </div>
+                                <div class="iPhone-Vertical iPhone-Vertical__right">
+                                    <div class="iPhone-Vertical__camera"><p>&#183;</p> </div>
+                                    <div class="iPhone-Vertical__speaker"></div>
+                                    <img class="iPhone-Vertical__button" src="./assets/Square (1).png" width="30px" alt="Square">
+                                    <div class="iPhone-Vertical__screen"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide slide_4" id="first">
+                            <div class="slide__one">
+                                <div class="iPhone-Vertical">
+                                <div class="iPhone-Vertical__camera"><p>&#183;</p> </div>
+                                <div class="iPhone-Vertical__speaker"></div>
+                                <img class="iPhone-Vertical__button" src="./assets/Square (1).png" alt="Square">
+                                <div class="iPhone-Vertical__screen"></div>
+                            </div>
+                            
+                            <div class="iPhone-Horizontal">
+                                <div class="iPhone-Horizontal__camera"><p>&#183;</p> </div>
+                                <div class="iPhone-Horizontal__speaker"></div>
+                                <img class="iPhone-Horizontal__button" src="./assets/Square (1).png" alt="Square">
+                                <div class="iPhone-Horizontall__screen"></div>
+                            </div>
+                            </div> 
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
             <div class="slider__pointer-left slider_pointer" id="next"><img src="./assets/arrow-right.svg" alt="pointer"></div>
         </div>
     </section>
-    <section class="services">
-        <a name="services"></a>
+    <section class="services" id="services">
         <div class="wrapper">
             <div class="services__content">
                 <h2>Our Services</h2>
@@ -134,8 +221,7 @@
             </div>
         </div>
     </section>
-    <section class="portfolio">
-        <a name="portfolio"></a>
+    <section class="portfolio" id="portfolio">
         <div class="wrapper">
             <h2>Portfolio</h2>
             <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
@@ -162,8 +248,7 @@
         </div>
         <div class="bottom-line"></div>
     </section>
-    <section class="about-us">
-        <a name = "about-us"></a>
+    <section class="about-us" id="about-us">
         <div class="wrapper">
             <h2 class="about-us__title">About Us</h2>
             <p class="about-us__description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -211,8 +296,7 @@
         </div>
         <div class="bottom-line"></div>
     </section>
-    <section class="get-quote">
-        <a name = "get-quote"></a>
+    <section class="get-quote" id="get-quote">
         <div class="wrapper">
             <h2 class="get-quote__title">Get a Quote</h2>
             <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -221,7 +305,7 @@
                     <input type="text" name = 'name' placeholder="Name (Reqired)" required>
                     <input type="email" name="email" placeholder="Email (Required)" required>
                     <input type="text" name="subject" placeholder="Subject">
-                    <textarea class="form__discribe" name="textarea" placeholder="Describe your project in detail...">Describe your project in detail...</textarea>
+                    <textarea class="form__discribe" name="textarea" placeholder="Describe your project in detail..."></textarea>
                     <input class="button" type="submit" value="Send">
                 </form>
                 <div class="contact-info">
@@ -245,7 +329,7 @@
         </div>
         <div class="bottom-line"></div>
     </section>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="wrapper"> 
             <p>	&copy; Copyright 2013 &#183; by PSDchat.com</p>
             <div class="social">
