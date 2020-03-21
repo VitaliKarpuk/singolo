@@ -14,9 +14,7 @@ window.onload = () => {
     const menu = document.querySelector('.header__menu');
     const menuImg = document.querySelector('.header__menu img')
     const menuSingolo = document.querySelector('.header__menu a')
-
-
-
+    const logo = document.querySelector('.logo_main')
 
 // Header
 navButtonHeader.onclick = (e) => {
@@ -268,11 +266,13 @@ menu.addEventListener('click', () => {
         navigation.style.display = 'block';
         navigation.style.top = '0'
         menuSingolo.style.display = 'block'
+        logo.style.display = 'none'
     }else{
         menuImg.style.transform = `rotate(0deg)`
         menuImg.className = 'menu_close'
         navigation.style.display = 'none'
         menuSingolo.style.display = 'none'
+        logo.style.display = 'block'
     }
 })
 
