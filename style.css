@@ -36,6 +36,9 @@ body{
   padding: 0 40px;
   margin: 0 auto;
 }
+.header__menu{
+  display: none;
+}
 .logo{
   display: flex;
 }
@@ -449,6 +452,9 @@ form input::placeholder {
   color: #f48c8f;
   resize: none;
 }
+.form__discribe::placeholder{
+  color: #f48c8f;
+}
 .button{
 background-color: #88383b;
 text-align: center;
@@ -645,6 +651,8 @@ background-color: #9c4b47;
   height: 43px;
   position: absolute;
   background-image: url(./assets/slider/button.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
   cursor: pointer;
 }
 .iPhone-Vertical__screen{
@@ -729,4 +737,947 @@ background-color: #9c4b47;
   top: 30px;
   left: 239px;
   opacity: 0.3;
+}
+/* MEDIA---------------------------------------------------------------------------- */
+@media screen and (max-width: 980px) {
+  .iPhone-Vertical img {
+    width: 221px;
+    top: 90px;
+    left: 124px;
+  }
+.iPhone-Horizontal img {
+  width: 440px;
+  top: 188px;
+  }
+  .iPhone-Vertical__screen {
+    width: 170px;
+    height: 301px;
+    left: 138px;
+    top: 152px;
+  }
+  .iPhone-Horizontall__screen {
+    height: 171px;
+    width: 302px;
+    top: 202px;
+    left: 479px;
+  }
+  .iPhone-Vertical__left img {
+    left: 200px;
+  }
+  .Vertical-left__button {
+    left: 274px;
+  }
+  .iPhone-Vertical__center {
+    left: 168px;
+  }
+  .iPhone-Vertical__right img {
+    left: 139px;
+  }
+  .Vertical-right__button {
+    left: 205px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .iPhone-Vertical img {
+    width: 208px;
+  }
+  .iPhone-Vertical__button {
+    top: 439px;
+    width: 35px;
+}
+  .iPhone-Horizontal img {
+    width: 393px;
+    top: 195px;
+    left: 409px;
+  }
+  .iPhone-Horizontal__button {
+    bottom: 561px;
+    left: 416px;
+    width: 37px;
+  }
+  .iPhone-Vertical__screen {
+    width: 160px;
+    height: 283px;
+    left: 137px;
+    top: 149px;
+  }
+  .iPhone-Horizontall__screen {
+    height: 153px;
+    width: 269px;
+    top: 207px;
+    left: 459px;
+  }
+  .iPhone-Vertical__left img {
+    left: 156px;
+  }
+  .Vertical-left__button {
+    left: 229px;
+  }
+  .iPhone-Vertical__center {
+    left: 122px;
+  }
+  .iPhone-Vertical__right img {
+    left: 93px;
+  }
+  .Vertical-right__button {
+    left: 161px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .iPhone-Vertical img {
+    width: 187px;
+  }
+  .iPhone-Vertical__button {
+    top: 403px;
+    left: 190px;
+  }
+  .iPhone-Horizontal img {
+    width: 375px;
+    left: 396px;
+  }
+  .iPhone-Horizontal__button {
+    left: 402px;
+  }
+  .iPhone-Vertical__screen {
+    width: 144px;
+    height: 255px;
+    left: 136px;
+    top: 142px;
+  }
+  .iPhone-Horizontall__screen {
+    height: 146px;
+    width: 258px;
+    top: 207px;
+    left: 443px;
+  }
+}
+@media screen and (max-width: 825px) {
+  .iPhone-Horizontal img {
+    left: 335px;
+  }
+  .iPhone-Horizontal__button {
+    left: 340px;
+  }
+  .iPhone-Horizontall__screen {
+    left: 382px;
+  }
+  .iPhone-Vertical__left img {
+    left: 130px;
+  }
+  .Vertical-left__button {
+    left: 203px;
+  }
+  .iPhone-Vertical__center {
+    left: 96px;
+  }
+  .iPhone-Vertical__right img {
+    left: 67px;
+  }
+  .Vertical-right__button {
+    left: 135px;
+  }
+}
+@media screen and (max-width: 768px){
+  .slider {
+    height: 452px;
+  }
+  .slider__pointer-right {
+    left: 30px;
+  }
+  .slider_pointer{
+    top: 213px;
+  }
+  .slider__pointer-left {
+    right: 27px;
+  }
+  .iPhone-Vertical img {
+    width: 184px;
+    top: 39px;
+    left: 82px;
+  }
+  .iPhone-Vertical__button {
+    top: 347px;
+    left: 148px;
+  }
+  .iPhone-Horizontal img {
+    width: 366px;
+    top: 133px;
+    left: 318px;
+  }
+  .iPhone-Horizontal__button {
+    left: 323px;
+    bottom: 468px;
+  }
+  .iPhone-Vertical__screen {
+    width: 142px;
+    height: 251px;
+    left: 93px;
+    top: 90px;
+  }
+  .iPhone-Horizontall__screen {
+    height: 142px;
+    width: 251px;
+    top: 145px;
+    left: 364px;
+  }
+  .iPhone-Vertical__left img, .iPhone-Vertical__right img {
+    width: 148px;
+  }
+  .Vertical-left__button {
+    left: 222px;
+    top: 45px;
+    width: 28px;
+    background-repeat: no-repeat;
+  }
+  .Vertical-right__button {
+    left: 158px;
+    width: 28px;
+    background-repeat: no-repeat;
+    top: 45px;
+  }
+  .Vertical-center__button {
+    width: 38px;
+    height: 38px;
+    left: 73px;
+    bottom: 66px;
+  }
+  .iPhone-Vertical__left img {
+    left: 163px;
+  }
+  .iPhone-Vertical__right img {
+    left: 113px;
+  }
+  .iPhone-Vertical__center{
+    width: 200px;
+    left: 137px;
+  }
+  .iPhone-Vertical__center img{
+    width: 100%;
+  }
+  .Vertical-center__screen {
+    width: 154px;
+    height: 271px;
+    bottom: 381px;
+    left: 13px;
+}
+  .header__navigation {
+    width: 374px;
+  }
+  .navigation {
+    font-size: 1.1rem;
+  }
+  .services .wrapper {
+    padding: 51px 40px 24px 40px;
+  }
+  .services__content > p {
+    margin-bottom: 36px;
+    line-height: 28px;
+  }
+  .tool {
+    margin-bottom: 48px;
+  }
+  .tool:nth-child(1),  .tool:nth-child(3), .tool:nth-child(5){
+    margin-right: 63px;
+  }
+  .portfolio h2 {
+    letter-spacing: 0px;
+  }
+  .portfolio__tag {
+    margin-bottom: 27px;
+  }
+  article {
+    margin-bottom: 19px;
+  }
+  .portfolio-img {
+    width: 216px;
+    height: 184px;
+  }
+  .portfolio .bottom-line {
+    margin-top: 50px;
+  }
+  .about-us {
+    padding: 62px 0 0px;
+  }
+  .about-us__description {
+    margin-bottom: 40px;
+  }
+  .employee img {
+    margin-bottom: 8px;
+  }
+  .employee p {
+    margin: 0 0 12px 0;
+  }
+  .employee h3 {
+    margin-bottom: 0px !important;
+  }
+  .get-quote p {
+    margin-bottom: 22px;
+  }
+  form {
+    flex-grow: 1.23;
+  }
+  .contact-info {
+    margin-left: 30px;
+  }
+  form input {
+    padding: 11px 0 11px 9px;
+    margin-bottom: 13px;
+  }
+  .form__discribe {
+    height: 141px;
+    margin-bottom: 19px;
+  }
+  .button {
+    background-color: #FBC65F;
+    color: #886A30;
+    font-size: 1.4rem;
+    width: 136px;
+    line-height: 17px;
+    text-align: center;
+  }
+  .contact-info h3 {
+    margin-bottom: 1px;
+  }
+  .contact-info .contact-info__discribe {
+    margin-bottom: 12px;
+  }
+  .wrapper {
+    margin: 0 40px 26px 40px;
+  }
+  .footer {
+    height: 103px;
+  }
+}
+@media screen and (max-width: 728px){
+  .iPhone-Vertical img {
+    width: 162px;
+    top: 75px;
+    left: 82px;
+  }
+  .iPhone-Vertical__button {
+    top: 347px;
+    left: 142px;
+    width: 26px;
+  }
+  .iPhone-Horizontal img {
+    width: 336px;
+    top: 144px;
+    left: 287px;
+  }
+  .iPhone-Horizontal__button {
+    left: 298px;
+    bottom: 462px;
+    width: 26px;
+  }
+  .iPhone-Vertical__screen {
+    width: 125px;
+    height: 221px;
+    left: 92px;
+    top: 120px;
+  }
+    .iPhone-Horizontall__screen {
+      height: 130px;
+      width: 230px;
+      top: 155px;
+      left: 330px;
+  }
+}
+@media screen and (max-width: 668px){
+  .slider {
+    height: 413px;
+  }
+  .iPhone-Vertical img {
+    width: 135px;
+  }
+.iPhone-Vertical__button {
+  top: 300px;
+  left: 131px;
+  width: 23px;
+  }
+  .iPhone-Horizontal img {
+    width: 296px;
+    left: 255px;
+  }
+  .iPhone-Horizontal__button {
+    left: 261px;
+    bottom: 396px;
+    width: 23px;
+  }
+  .iPhone-Vertical__screen {
+    width: 105px;
+    height: 183px;
+    left: 90px;
+    top: 113px;
+  }
+  .iPhone-Horizontall__screen {
+    height: 115px;
+    width: 203px;
+    top: 153px;
+    left: 293px;
+  }
+  .iPhone-Vertical__left img {
+    left: 118px;
+  }
+  .Vertical-left__button {
+    left: 173px;
+    top: 32px;
+    width: 24px;
+  }
+  .iPhone-Vertical__center {
+    width: 200px;
+    left: 94px;
+  }
+  .iPhone-Vertical__center img {
+    width: 89%;
+  }
+  .Vertical-center__screen {
+    width: 136px;
+    height: 243px;
+    bottom: 345px;
+    left: 12px;
+  }
+  .iPhone-Vertical__right img {
+    left: 51px;
+  }
+  .Vertical-right__button {
+    left: 101px;
+    width: 24px;
+    top: 32px;
+  }
+  .iPhone-Vertical__left img, .iPhone-Vertical__right img {
+    top: 78px;
+    width: 140px;
+  }
+  .Vertical-center__button {
+    width: 34px;
+    height: 38px;
+    left: 66px;
+    bottom: 60px;
+}
+}
+@media screen and (max-width: 605px){
+  .header__navigation{
+    display: none;
+  }
+  .iPhone-Horizontal img {
+    left: 223px;
+  }
+  .iPhone-Horizontal__button {
+    left: 229px;
+  }
+  .iPhone-Horizontall__screen {
+    left: 261px;
+  }
+  .iPhone-Vertical__screen {
+    width: 105px;
+    height: 183px;
+    left: 90px;
+    top: 113px;
+  }
+  .iPhone-Horizontall__screen {
+    height: 115px;
+    width: 202px;
+    top: 153px;
+    left: 261px;
+  }
+  .iPhone-Vertical__left img {
+    left: 94px;
+  }
+  .Vertical-left__button {
+    left: 146px;
+  }
+  .iPhone-Vertical__center {
+    left: 70px;
+  }
+  .iPhone-Vertical__right img {
+    left: 27px;
+  }
+  .Vertical-right__button {
+    left: 74px;
+  }
+}
+@media screen and (max-width: 565px){
+  .slider {
+    height: 350px;
+  }
+  .slider_pointer {
+    top: 144px;
+}
+  .iPhone-Vertical img {
+    width: 89px;
+  }
+  .iPhone-Vertical__button {
+    top: 225px;
+    left: 115px;
+    width: 15px;
+  }
+  .iPhone-Horizontal img {
+    width: 191px;
+    left: 223px;
+    top: 119px;
+  }
+  .iPhone-Horizontal__button {
+    width: 15px;
+    left: 229px;
+    top: 154px;
+  }
+  .iPhone-Vertical__screen {
+    width: 69px;
+    height: 122px;
+    left: 88px;
+    top: 99px;
+  }
+  .iPhone-Horizontall__screen {
+    height: 74px;
+    width: 131px;
+    top: 125px;
+    left: 247px;
+  }
+  .iPhone-Vertical__center {
+    top: 20px;
+    width: 179px;
+    left: 91px;
+  }
+  .Vertical-center__screen {
+    width: 123px;
+    height: 216px;
+    bottom: 304px;
+    left: 10px;
+  }
+  .Vertical-center__button {
+    width: 30px;
+    height: 30px;
+    left: 59px;
+    bottom: 55px;
+  }
+  .iPhone-Vertical__left img, .iPhone-Vertical__right img {
+    top: 58px;
+    width: 118px;
+  }
+  .iPhone-Vertical__left img {
+    left: 111px;
+  }
+  .iPhone-Vertical__right img {
+    left: 52px;
+  }
+  .Vertical-left__button {
+    left: 160px;
+    top: 19px;
+    width: 19px;
+  }
+  .Vertical-right__button {
+    left: 93px;
+    width: 19px;
+    top: 19px;
+  }
+}
+@media screen and (max-width: 520px){
+  .iPhone-Vertical__center {
+    left: 65px;
+  }
+  .iPhone-Vertical__left img, .iPhone-Vertical__right img {
+    top: 58px;
+    width: 118px;
+  }
+  .iPhone-Vertical__left img {
+    left: 86px;
+  }
+  .iPhone-Vertical__right img {
+    left: 25px;
+  }
+  .Vertical-left__button {
+    left: 131px;
+  }
+  .Vertical-right__button {
+    left: 67px;
+  }
+}
+@media screen and (max-width: 520px){
+  .iPhone-Vertical__center {
+    left: 49px;
+  }
+  .iPhone-Vertical__left img, .iPhone-Vertical__right img {
+    top: 58px;
+    width: 118px;
+  }
+  .iPhone-Vertical__left img {
+    left: 69px;
+  }
+  .iPhone-Vertical__right img {
+    left: 10px;
+  }
+  .Vertical-left__button {
+    left: 118px;
+  }
+  .Vertical-right__button {
+    left: 54px;
+  }
+}
+@media screen and (max-width: 460px){
+  .header__menu{
+    display: block;
+    margin: 6px 103px 0 0;
+  }
+  h1{
+    font-weight: bold;
+    font-size: 19.6875px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    margin-top: 3px;
+  }
+  .iPhone-Horizontal img {
+    left: 188px;
+  }
+  .iPhone-Horizontal__button {
+    left: 193px;
+  }
+  .iPhone-Horizontall__screen {
+    left: 212px;
+  }
+  .iPhone-Vertical__left img, .iPhone-Vertical__right img {
+    top: 65px;
+    width: 96px;
+  }
+  .iPhone-Vertical__center {
+    top: 28px;
+    width: 151px;
+  }
+  .Vertical-center__screen {
+    width: 103px;
+    height: 183px;
+    bottom: 262px;
+    left: 9px;
+  }
+  .Vertical-left__button {
+    left: 109px;
+    top: 32px;
+    width: 17px;
+  }
+  .Vertical-center__button {
+    width: 26px;
+    height: 30px;
+    left: 50px;
+    bottom: 47px;
+  }
+  .iPhone-Vertical__right img {
+    left: 16px;
+  }
+  .Vertical-right__button {
+    left: 52px;
+    width: 17px;
+    top: 32px;
+  }
+}
+@media screen and (max-width: 425px){
+  .slider__pointer-left {
+    right: 9px;
+  }
+  .slider__pointer-right {
+    left: 9px;
+  }
+}
+@media screen and (max-width: 410px){
+  .slider {
+    height: 250px;
+  }
+  .slider_pointer {
+    top: 105px;
+  }
+  .iPhone-Vertical img {
+    top: 35px;
+    left: 61px;
+  }
+  .iPhone-Vertical__button {
+    top: 185px;
+    left: 94px;
+  }
+  .iPhone-Horizontal img {
+    left: 169px;
+    top: 74px;
+  }
+  .iPhone-Horizontal__button {
+    left: 175px;
+    top: 109px;
+  }
+  .iPhone-Horizontall__screen {
+    left: 193px;
+    top: 80px;
+  }
+  .iPhone-Vertical__screen {
+    left: 66px;
+    top: 59px;
+  }
+  .iPhone-Vertical__left img, .iPhone-Vertical__right img {
+    top: 59px;
+    width: 69px;
+  }
+  .iPhone-Vertical__center {
+    top: 27px;
+    width: 118px;
+    left: 69px;
+  }
+  .Vertical-center__screen {
+    width: 81px;
+    height: 143px;
+    bottom: 199px;
+    left: 6px;
+  }
+  .iPhone-Vertical__right img {
+    left: 44px;
+  }
+  .iPhone-Vertical__left img {
+    left: 79px;
+  }
+  .Vertical-left__button {
+    left: 107px;
+    top: 35px;
+    width: 12px;
+  }
+  .Vertical-right__button {
+    left: 68px;
+    width: 12px;
+    top: 35px;
+  }
+  .Vertical-center__button {
+    width: 21px;
+    height: 18px;
+    left: 40px;
+    bottom: 37px;
+  }
+}
+@media screen and (max-width: 386px){
+  .header{
+    height: 71px;
+  }
+  .header .wrapper {
+    height: 100%;
+  }
+  .iPhone-Vertical img {
+    left: 48px;
+  }
+  .iPhone-Vertical__button {
+    left: 81px;
+  }
+  .iPhone-Horizontal img {
+    left: 146px;
+  }
+  .iPhone-Horizontal__button {
+    left: 152px;
+  }
+  .iPhone-Vertical__screen {
+    left: 54px;
+  }
+  .iPhone-Horizontall__screen {
+    left: 170px;
+  }
+}
+@media screen and (max-width: 376px){
+  .slider {
+    height: 222px;
+  }
+  .header .wrapper {
+    padding: 0 16px;
+    justify-content: flex-start;
+  }
+  .iPhone-Vertical img {
+    top: 20px;
+    left: 36px;
+    width: 90px;
+  }
+  .iPhone-Vertical__button {
+    left: 68px;
+    top: 171px;
+  }
+  .iPhone-Horizontal img {
+    width: 180px;
+    left: 150px;
+    top: 65px;
+  }
+  .iPhone-Horizontal__button {
+    left: 154px;
+    top: 98px;
+  }
+  .slider_pointer img{
+    width: 15px;
+  }
+  .iPhone-Vertical__screen {
+    left: 42px;
+    top: 45px;
+    height: 123px;
+  }
+  .iPhone-Horizontall__screen {
+    left: 172px;
+    top: 71px;
+    height: 70px;
+    width: 124px;
+  }
+  .slider_pointer {
+    top: 99px;
+  }
+  .slider__pointer-left {
+    right: 13px;
+  }
+  .slider__pointer-right {
+    left: 6px;
+  }
+  .iPhone-Vertical__center {
+    width: 102px;
+  }
+  .Vertical-center__screen {
+    width: 69px;
+    height: 123px;
+    bottom: 175px;
+    left: 6px;
+  }
+  .iPhone-Vertical__left img, .iPhone-Vertical__right img {
+    top: 51px;
+    width: 65px;
+  }
+  .Vertical-left__button {
+    top: 28px;
+    width: 12px;
+    left: 104px;
+  }
+  .iPhone-Vertical__right img {
+    left: 47px;
+  }
+  .Vertical-right__button {
+    top: 29px;
+  }
+  .Vertical-center__button {
+    width: 18px;
+    height: 18px;
+    left: 33px;
+    bottom: 32px;
+  }
+  .services .wrapper {
+    padding: 35px 40px 0 27px;
+  }
+  .tool:nth-child(1), .tool:nth-child(3), .tool:nth-child(5) {
+    margin-right: 0px;
+  }
+  .tool {
+    margin-bottom: 24px;
+    margin-right: 0;
+  }
+  .tool:last-child{
+    margin-bottom: 20px;
+  }
+  .portfolio {
+    padding: 43px 0 0;
+    height: 803px;
+  }
+  .portfolio .wrapper {
+    margin: 0 35px 0 26px;
+  }
+  .portfolio p {
+    margin-bottom: 15px;
+  }
+  .portfolio__tag {
+    margin-bottom: 25px;
+  }
+  .portfolio-img {
+    width: 151px;
+    height: 128px;
+  }
+  .portfolio-img img {
+    width: 100%;
+    height: 100%;
+  }
+  article {
+    margin-bottom: 14px;
+  }
+  .layout-4-column{
+    height: 562px;
+  }
+  .about-us {
+    padding: 41px 0 0px;
+    height: 1712px;
+  }
+  .about-us .wrapper {
+    margin: 0 34px 0 26px;
+  }
+  .about-us__description {
+    margin-bottom: 26px;
+  }
+  .employee {
+    width: 100%;
+  }
+  .employee img {
+    margin-bottom: 14px;
+  }
+  .employee h3 {
+    margin-bottom: 3px !important;
+  }
+  .employee__conect {
+    margin-bottom: 31px;
+  }
+  .employee p {
+    margin: 0 0 11px 0;
+  }
+  .get-quote {
+    padding-top: 53px;
+  }
+  .get-quote .wrapper {
+    margin: 0 34px 33px 26px;
+  }
+  .contact-info {
+    flex-basis: 0;
+  }
+  .layout-2-column {
+    flex-direction: column;
+  }
+  form {
+    width: 100%;
+    margin-bottom: 19px;
+  }
+  .get-quote p {
+    margin-bottom: 24px;
+  }
+  form input {
+    padding: 11px 0 11px 7px;
+  }
+  .button {
+    width: 100%;
+  }
+  .form__discribe {
+    margin-bottom: 16px;
+  }
+  .button {
+    padding: 16px 0;
+  }
+  .contact-info {
+    margin-left: 0;
+  }
+  .contact-info .contact-info__discribe {
+    margin-bottom: 15px;
+  }
+  .contact-info .contact-info__data {
+    margin-bottom: 2px;
+  }
+  .footer {
+    height: 76px;
+  }
+  .footer p {
+    display: none;
+  }
+  .footer .wrapper {
+    margin: 0;
+    justify-content: center;
+    margin-right: 13px;
+  }
+  .modal__window {
+    box-sizing: border-box;
+    top: 20%;
+    margin: 10%;
+    width: 79%;
+    height: 200px;
+    padding: 43px;
+    left: 0;
+  }
+  .modal_button {
+    top: 25%;
+    width: 100%;
+    left: 0;
+  }
 }
