@@ -1560,7 +1560,7 @@ background-color: #9c4b47;
     width: 206px;
   }
   .header__menu {
-    margin: 0px 33% 0 0;
+    margin: 0px 22% 0 0;
   }
   .navigation {
     padding: 42px 0 20px 69px;
@@ -1572,25 +1572,25 @@ background-color: #9c4b47;
     height: 222px;
   }
   .header .wrapper {
-    padding: 0 16px;
+    padding: 0 18px;
     justify-content: flex-start;
   }
   .iPhone-Vertical img {
     top: 20px;
-    left: 36px;
+    left: 40px;
     width: 90px;
   }
   .iPhone-Vertical__button {
-    left: 68px;
+    left: 73px;
     top: 171px;
   }
   .iPhone-Horizontal img {
     width: 180px;
-    left: 150px;
+    left: 155px;
     top: 65px;
   }
   .iPhone-Horizontal__button {
-    left: 154px;
+    left: 159px;
     top: 98px;
   }
   .slider_pointer img{
@@ -1611,10 +1611,10 @@ background-color: #9c4b47;
     top: 99px;
   }
   .slider__pointer-left {
-    right: 13px;
+    right: 9px;
   }
   .slider__pointer-right {
-    left: 6px;
+    left: 9px;
   }
   .iPhone-Vertical__center {
     width: 102px;
@@ -1647,13 +1647,13 @@ background-color: #9c4b47;
     bottom: 32px;
   }
   .services .wrapper {
-    padding: 35px 40px 0 29px;
+    padding: 35px 33px 0 31px;
   }
   .tool:nth-child(6) {
     margin-right: 0;
   }
   .tool h3 {
-    margin: 0 0 8px 0;
+    margin: 0 0 11px 0;
   }
   h2{
     margin: 0px 0 26px 0;
@@ -1673,11 +1673,11 @@ background-color: #9c4b47;
     margin-bottom: 20px;
   }
   .portfolio {
-    padding: 43px 0 0;
+    padding: 42px 0 0;
     height: 803px;
   }
   .portfolio .wrapper {
-    margin: 0 35px 0 26px;
+    margin: 0 31px 0 30px;
   }
   .portfolio p {
     margin-bottom: 15px;
@@ -1710,7 +1710,7 @@ background-color: #9c4b47;
     height: 1712px;
   }
   .about-us .wrapper {
-    margin: 0 34px 0 26px;
+    margin: 0 30px 0 29px;
   }
   .about-us__description {
     margin-bottom: 26px;
@@ -1734,7 +1734,7 @@ background-color: #9c4b47;
     padding-top: 53px;
   }
   .get-quote .wrapper {
-    margin: 0 34px 33px 26px;
+    margin: 0 31px 33px 29px;
   }
   .contact-info {
     flex-basis: 0;
@@ -1779,7 +1779,6 @@ background-color: #9c4b47;
   .footer .wrapper {
     margin: 0;
     justify-content: center;
-    margin-right: 13px;
   }
   .modal__window {
     box-sizing: border-box;
