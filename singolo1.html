@@ -25,10 +25,29 @@
         </header>
         <section class="slider">
             <div class="wrapper">
-                <div class="slider__pointer-left slider_pointer"><img src="./assets/pointer-left.png" alt="pointer"></div>
-                <div class="slider__IPhon-horizontal"><img src="./assets/iPhone-Vertical.png" altiPhone Verticaldiv></div>
-                <div class="slider__IPhon-vertical"><img src="./assets/iPhone-Horizontal.png" alt="iPhone Horizontal"></div>
-                <div class="slider__pointer-right slider_pointer"><img src="./assets/pointer-right.png" alt="pointer"></div>
+                <div class="slider__pointer-right slider_pointer" id="previous"><img src="./assets/pointer-left.png" alt="pointer"></div>
+                <ul class="slides">
+                    <li class="slide showing">
+                        <div class="iPhone-Vertical">
+                            <div class="iPhone-Vertical__camera"><p>&#183;</p> </div>
+                            <div class="iPhone-Vertical__speaker"></div>
+                            <img class="iPhone-Vertical__button" src="./assets/Square (1).png" alt="Square">
+                            <div class="iPhone-Vertical__screen"></div>
+                        </div>
+                        
+                        <div class="iPhone-Horizontal">
+                            <div class="iPhone-Horizontal__camera"><p>&#183;</p> </div>
+                            <div class="iPhone-Horizontal__speaker"></div>
+                            <img class="iPhone-Horizontal__button" src="./assets/Square (1).png" alt="Square">
+                            <div class="iPhone-Horizontall__screen"></div>
+                        </div>
+                    </li>
+                    <li class="slide">
+                        <img src="./assets/img-slide2.jpeg" alt="slide" width="100%">
+                    </li>
+                </ul>
+
+                <div class="slider__pointer-left slider_pointer" id="next"><img src="./assets/pointer-right.png" alt="pointer"></div>
             </div>
         </section>
         <section class="services">
@@ -95,6 +114,7 @@
                 </div>
             </div>
         </section>
-    </div>   
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
